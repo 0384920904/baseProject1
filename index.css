@@ -101,6 +101,27 @@ html {
     position: relative;
 }
 
+.tournament-more {
+    display: flex;
+    flex-direction: column;
+    max-width: 8.33333%;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
+}
+
+.tournament-more i{
+    color: rgb(236, 236, 236);
+    font-size: 2.2rem;
+}
+
+.tournament-more span {
+    color: rgb(236, 236, 236);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 .tournament-logo {
     width: 50px;
     height: 50px;
@@ -129,17 +150,17 @@ html {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.top-leagues__title{
+.top-leagues__title {
     padding: 20px;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.top-leagues__item{
+.top-leagues__item {
     padding: 5px 0;
 }
 
-.top-leagues__item:hover{
+.top-leagues__item:hover {
     background-color: #a81b020f;
 }
 
@@ -159,7 +180,7 @@ html {
     margin-right: 15px;
 }
 
-.top-leagues__item span{
+.top-leagues__item span {
     color: var(--text-color);
     font-size: 1.4rem;
 }

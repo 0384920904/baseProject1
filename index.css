@@ -16,7 +16,7 @@ html {
 
 .app {
     background-color: #cecece58;
-    height: 1000px;
+    height: 2000px;
 }
 
 .header {
@@ -41,11 +41,6 @@ html {
     font-weight: 500;
     font-size: 2.8rem;
     padding-left: 3px;
-}
-
-.input-group__search-item {
-    font-size: 2rem;
-    color: black;
 }
 
 .input-group__search-input {
@@ -110,7 +105,7 @@ html {
     margin: auto 0;
 }
 
-.tournament-more i{
+.tournament-more i {
     color: rgb(236, 236, 236);
     font-size: 2.2rem;
 }
@@ -125,7 +120,7 @@ html {
 .tournament-logo {
     width: 50px;
     height: 50px;
-    margin-left: 33px;
+    margin-left: 20px;
     margin-bottom: 5px;
 }
 
@@ -183,4 +178,194 @@ html {
 .top-leagues__item span {
     color: var(--text-color);
     font-size: 1.4rem;
+}
+
+.top-leagues .input-group__search-input {
+    width: 88%;
+    border: 1px solid #7f7f7f;
+    border-radius: 5px;
+    background-image: url(img/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 1.5rem;
+    padding: 5px 0 5px 35px;
+    margin-left: 5.5%;
+    margin-bottom: 10px;
+}
+
+.schedule {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0 15px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.shedule-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.shedule-head__filter {
+    border: 1px solid #dddfe3;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.shedule-head__filter--all,
+.shedule-head__filter--live,
+.shedule-head__show-odd {
+    padding: 6px 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.shedule-head__filter--all {
+    color: #32bf4c;
+    border: none;
+}
+
+.shedule-head__filter--live {
+    color: #cd292a;
+    border: none;
+}
+
+.shedule-head__filter--all.active {
+    border: 2px solid #32bf4c;
+}
+
+.shedule-head__filter--live.active {
+    border: 2px solid #cd292a;
+}
+
+.shedule-head__show-odd {
+    border: 1px solid #b1b1b1;
+    background-color: rgb(252, 252, 252);
+}
+
+.schedule-list {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.schedule-list__title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0 0 15px 15px;
+}
+
+.schedule-list__group {}
+
+.schedule-list__nation {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.schedule-list__flag {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.schedule-list__name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex: 1;
+    border-right: 1.5px solid #d5d6da;
+}
+
+.schedule-list__name--nation {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    width: 25%;
+}
+
+.schedule-list__name--league {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    width: 25%;
+}
+
+.schedule-list__name--nation:hover,
+.schedule-list__name--league:hover {
+    color: var(--primary-color);
+}
+
+.schedule-list__icon {
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.schedule-list__icon:hover {
+    color: #a81b027e;
+}
+
+.schedule-list__list {
+    margin-top: 10px;
+}
+
+.schedule-list__item {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.schedule-list__item:hover{
+    background-color: #a81b020f;
+}
+
+.schedule-list__time {
+    color: #a3a3a3;
+    font-size: 1.2rem;
+}
+
+.schedule-list__team {
+    flex: 1;
+    border-right: 1.5px solid #d5d6da;
+    margin-left: 20px;
+    border-left: 1.5px solid #d5d6da;
+    padding: 4px 0 4px 8px;
+    cursor: pointer;
+}
+
+.schedule-list__team-1 {
+    display: flex;
+    align-items: center;
+}
+
+.schedule-list__team-1:first-child{
+    margin-bottom: 3px;
+}
+
+.schedule-list__team-logo {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+
+.schedule-list__team-name {
+    font-size: 1.3rem;
+}
+
+.schedule-list__icon.fa-bell {
+    margin-left: 12px;
 }

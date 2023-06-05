@@ -55,12 +55,14 @@ html {
     font-size: 2rem;
 }
 
+
 .notify-link {
     text-decoration: none;
     color: whitesmoke;
     display: flex;
     align-items: center;
     height: 100%;
+    margin-left: 80px;
 }
 
 .notify-icon {
@@ -133,7 +135,7 @@ html {
 
 .container {
     position: absolute;
-    margin-top: 210px;
+    margin-top: 240px;
     width: 100%;
 }
 
@@ -182,7 +184,7 @@ html {
 
 .top-leagues .input-group__search-input {
     width: 88%;
-    border: 1px solid #7f7f7f;
+    border: 1px solid #bcbcbc;
     border-radius: 5px;
     background-image: url(img/search-icon.png);
     background-repeat: no-repeat;
@@ -199,6 +201,7 @@ html {
     padding: 0 15px;
     border-radius: 10px;
     padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .shedule-head {
@@ -323,9 +326,11 @@ html {
     margin-top: 10px;
     align-items: center;
     padding: 0 15px;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-.schedule-list__item:hover{
+.schedule-list__item:hover {
     background-color: #a81b020f;
 }
 
@@ -348,7 +353,7 @@ html {
     align-items: center;
 }
 
-.schedule-list__team-1:first-child{
+.schedule-list__team-1:first-child {
     margin-bottom: 3px;
 }
 
@@ -356,9 +361,8 @@ html {
     width: 15px;
     height: 15px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    border-radius: 1px;
     margin-right: 10px;
 }
 
@@ -368,4 +372,168 @@ html {
 
 .schedule-list__icon.fa-bell {
     margin-left: 12px;
+}
+
+.feature-match__link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.feature-match {
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.feature-match__title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 15px 0 15px 5px;
+}
+
+.feature-match__main {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.feature-match__main:hover {
+    background-color: #c8c8c8;
+}
+
+.feature-match__team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-match__team-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.feature-match__team-logo {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.feature-match__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-match__time-remain {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.feature-match__time-time {
+    font-size: 1.3rem;
+    padding-top: 5px;
+    color: #7f7f7f;
+}
+
+.feature-match__title span {
+    font-size: 1.2rem;
+    display: block;
+    color: #7f7f7f;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.top-players {
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.top-players .feature-match__title {
+    padding-left: 15px;
+}
+
+.top-players__main {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-top: 1px solid #e6e6e6;
+}
+
+.top-players__main:hover {
+    background-color: #a81b020f;
+}
+
+.top-players__order-num {
+    font-size: 1.6rem;
+    margin-right: 15px;
+}
+
+.top-players__img {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #c9c9c9;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.top-players__img-logo {
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(125%, 120%);
+}
+
+.top-players__detail {
+    flex: 1;
+}
+
+.top-players__name {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.top-players__match {
+    color: #7f7f7f;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.top-players__mark {
+    background-color: #037ab0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+
+.top-players__heatmap {
+    width: 95%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 10px;
+    border-radius: 5px;
 }

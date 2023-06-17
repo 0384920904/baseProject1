@@ -16,7 +16,6 @@ html {
 
 .app {
     background-color: #cecece58;
-    height: 2000px;
 }
 
 .header {
@@ -260,7 +259,10 @@ html {
     padding: 0 0 15px 15px;
 }
 
-.schedule-list__group {}
+.schedule-list__group {
+    padding: 15px 0;
+    border-top: 1px solid #e2e2e2;
+}
 
 .schedule-list__nation {
     display: flex;
@@ -520,12 +522,23 @@ html {
 }
 
 .top-players__mark {
-    background-color: #037ab0;
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
     padding: 4px 6px;
     border-radius: 5px;
+}
+
+.top-players__mark.blue {
+    background-color: #037ab0;
+}
+
+.top-players__mark.green {
+    background-color: #1dac04;
+}
+
+.top-players__mark.lightgreen {
+    background-color: #a2bc00;
 }
 
 .top-players__heatmap {
@@ -536,4 +549,83 @@ html {
     background-position: center;
     margin: 10px;
     border-radius: 5px;
+}
+
+.more-item {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.more-item div {
+    cursor: pointer;
+}
+
+.more-item span {
+    font-size: 1.5rem;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.more-item i {
+    font-size: 1.3rem;
+    transform: translateY(1.18px);
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer-top {
+    background-color: #a81b02;
+    padding: 20px 0;
+}
+
+.visit-us {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.visit-us h3 {
+    color: whitesmoke;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin: 0 16px;
+    user-select: none;
+}
+
+.visit-us__link-item {
+    margin: 0 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.visit-us__link-item :hover,
+.footer-bottom-item:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    background-color: var(--primary-color);
+    padding: 35px 0;
+}
+
+.copyright h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer-bottom-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
 }

@@ -457,6 +457,10 @@ body{
     margin-top: 3px;
 }
 
+.hightlight-match{
+    margin: 20px 0 20px;
+}
+
 .top-players {
     background-color: white;
     margin-bottom: 15px;

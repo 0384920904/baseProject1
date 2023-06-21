@@ -169,3 +169,18 @@ html {
     color: #333;
     font-weight: 500;
 }
+
+.form-group-suggest{
+    margin: 20px 0 10px;
+}
+
+.form-group-suggest p{
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.form-group-suggest p a{
+    font-weight: 600;
+    color: #1b6312;
+    font-size: 1.23rem;
+}

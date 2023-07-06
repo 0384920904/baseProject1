@@ -15,6 +15,20 @@ html {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    background-image: url(img/background-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.5;
 }
 
 .back-to-home {
@@ -33,11 +47,13 @@ html {
     min-height: 100px;
     padding: 32px 24px;
     text-align: center;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.586);
+    backdrop-filter: blur(10px);
     border-radius: 2px;
     margin: 24px;
     align-self: center;
     box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    z-index: 99;
 }
 
 .form .heading {

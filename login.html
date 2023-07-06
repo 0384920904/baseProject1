@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div class="main">  
+    <div class="main">
+        <div class="modal"></div>
         <form action="" method="POST" class="form" id="form-1">
             <h3 class="heading">
                 <a class="back-to-home" href="index.html">
@@ -54,9 +55,9 @@
             </div>
 
             <div class="form-group form-group-suggest">
-                    <p>Bạn chưa có tài khoản?
-                        <a href="register.html">Đăng ký</a>
-                    </p>
+                <p>Bạn chưa có tài khoản?
+                    <a href="register.html">Đăng ký</a>
+                </p>
             </div>
 
         </form>
@@ -66,12 +67,8 @@
 <script src="login.js"></script>
 
 <script>
-    //Mong muon cua chung ta
-    var form = new Validator('#form-1');
 
-    form.onSubmit = function (formData) {
-        console.log(formData);
-    }
+    var form = new Validator('#form-1');
 
 </script>
 

@@ -4,7 +4,7 @@ function Validator(formSelector) {
     var _this = this;
 
     //Lấy ra mật khẩu
-    var password=document.querySelector('#form-1 #password');
+    var password = document.querySelector(formSelector + ' #password');
 
     function getParent(element, selector) {
         while (element.parentElement) {
@@ -88,7 +88,7 @@ function Validator(formSelector) {
             if (errorMessage) {
                 var formGroup = getParent(event.target, '.form-group');
                 if (formGroup) {
-                    formGroup.classList.add('invalid')
+                    formGroup.classList.add('invalid');
                     var formMessage = formGroup.querySelector('.form-message');
                     if (formMessage) {
                         formMessage.innerText = errorMessage;
